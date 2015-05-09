@@ -14,31 +14,27 @@ $(document).ready(function(){
 	   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
 	                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
 	                                    // the browser's width is less than 600, the fallback will kick in.
-	   direction: "horizontal"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
-	});
-
-	$("#menu_logo").click(function(){
-		$(".main").moveTo(1);
+	   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 	});
 
 	$("#menu_home").click(function(){
 		$(".main").moveTo(1);
 	});
-	$("#menu_services").click(function(){
+
+	$("#menu_about").click(function(){
 		$(".main").moveTo(2);
 	});
-	$("#menu_portfolio").click(function(){
-		$(".main").moveTo(3);
-	});
+	// $("#menu_case").click(function(){
+	// 	$(".main").moveTo(3);
+	// });
+	
 	$("#menu_team").click(function(){
-		$(".main").moveTo(4);
+		$(".main").moveTo(6);
 	});
 	$("#menu_contact").click(function(){
-		$(".main").moveTo(5);
-	});
-	$("#goto_product").click(function(){
-		$(".main").moveTo(3);
+		$(".main").moveTo(7);
 	});
 
-	
+
+
 });
