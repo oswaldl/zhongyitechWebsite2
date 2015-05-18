@@ -771,38 +771,42 @@ footer
 }
 
 
-p{   
-    font-size:16px;/*字体大小*/  
-    text-indent:2em;/*首行缩进两个单位*/  
-    line-height:1.5em;/*行距为1.5个单位*/  
-    padding:10px;/*用内边距代替外边距来设置段间距*/  
-    margin:0;/*去掉默认的段间距*/  
-}  
+p{
+    font-size:16px;/*字体大小*/
+    text-indent:2em;/*首行缩进两个单位*/
+    line-height:1.5em;/*行距为1.5个单位*/
+    padding:10px;/*用内边距代替外边距来设置段间距*/
+    margin:0;/*去掉默认的段间距*/
+}
 
-b{   
-    font-style:italic;/*转换为斜体*/  
-    text-transform:capitalize;/*首字母大写,参数还有lowercase,uppercase*/  
-    font-size:14px;/*字号为14px*/  
-    word-spacing:-1px;/*词间距*/  
-}   
+b{
+    font-style:italic;/*转换为斜体*/
+    text-transform:capitalize;/*首字母大写,参数还有lowercase,uppercase*/
+    font-size:14px;/*字号为14px*/
+    word-spacing:-1px;/*词间距*/
+}
 
-p:nth-of-type(1){   
+
+/*选定第一段第一行*/
+/*
+p:nth-of-type(1){
     text-indent:0;
-}   
-p:nth-of-type(1):first-letter{/*选定第一段第一行*/  
-    font-size:2.5em;   
-    float:left;   
-    clear:both;   
-    margin:5px 1px 1px;/*为了各浏览显示一致,要加上外边距*/  
-}   
+}
+
+p:nth-of-type(1):first-letter{
+    font-size:2.5em;
+    float:left;
+    clear:both;
+    margin:5px 1px 1px;
+}
+*/
 
 
-
-h1{   
-    height:100%;   
-    font-size:36px;   
-    line-height:2em;   
-}   
-h2{   
+h1{
+    height:100%;
+    font-size:36px;
+    line-height:2em;
+}
+h2{
     color:#999;
-}  
+}
