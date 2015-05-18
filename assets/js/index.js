@@ -47,11 +47,20 @@ $(document).ready(function(){
 		window.location.href="./solution/industryCategory.html";
 	});
 
+	$("#proxyproducts").click(function(){
+		window.location.href="./solution/proxyProCategory.html";
+	});
+
+
 	$("#menu_team").click(function(){
 		$(".main").moveTo(6);
 	});
-	$("#menu_contact").click(function(){
+
+	$("#menu_proxy").click(function(){
 		$(".main").moveTo(7);
+	});
+	$("#menu_contact").click(function(){
+		$(".main").moveTo(8);
 	});
 
 
