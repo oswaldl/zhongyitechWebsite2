@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<!--[if lte IE 7 ]><html lang="en" class="old"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<title>某公司ALM集成项目</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="apple-mobile-web-app-title" content="云数据中心监控解决方案">
+		<meta name="description" content="[DESCRIPTION]" />
+		<meta property="og:title" content="云数据中心监控解决方案" />
+		<meta property="og:description" content="[DESCRIPTION]" />
+
+		<script>
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	            var msViewportStyle = document.createElement("style");
+	            msViewportStyle.appendChild(
+	            	document.createTextNode(
+	            		"@-ms-viewport{width:auto!important}"
+	            	)
+	            );
+	            document.getElementsByTagName("head")[0].
+	            appendChild(msViewportStyle);
+	        }
+		</script>
+
+		<link href="../counciltoolkit/css/bootstrap.min.css" rel="stylesheet">
+
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<!--[if ! lte IE 8]><!-->
+			<link rel="stylesheet" media="not print" href="../counciltoolkit/css/style.css" />
+		<!--<![endif]-->
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" media="screen" href="counciltoolkit/css/legacy.css" />
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="shortcut icon" href="counciltoolkit/images/icons/favicon.ico" />
+		<link rel="apple-touch-icon" href="counciltoolkit/images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="counciltoolkit/images/icons/apple-touch-icon.png" />
+
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse" role="navigation">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="navbar-header col-xs-5 col-sm-3">
+
+						<img src="../counciltoolkit/images/logo.png"/>
+
+					</div>
+
+					<div class="login-register col-xs-7 col-sm-4">
+
+						<ul>
+
+							<li><a href="#" class="btn btn-default">Register</a></li>
+
+							<li><a href="#" class="login btn btn-link">Log in</a></li>
+
+						</ul>
+
+					</div>
+<!--
+					<form class="main-search col-xs-12 col-sm-5" role="form">
+
+						<label class="sr-only" for="mainsearch">Search</label>
+						<input type="search" class="form-control" id="mainsearch" placeholder="eg. council tax, benefits&hellip;">
+
+						<button type="submit" class="btn btn-primary">Search</button>
+
+					</form>
+-->
+				</div>
+
+			</div>
+
+		</div>
+
+		<section class="breadcrumb">
+
+			<div class="container">
+
+				<ol>
+				  	<li><a href="../../index.html">Home</a></li>
+				  	<li><a href="../almCategory.html">alm</a></li>
+				  	<li class="active">rdelta</li>
+				</ol>
+
+			</div>
+
+		</section>
+
+		<div class="container">
+
+			<div class="row">
+
+				<article id="content" class="article col-sm-9 col-md-8">
+
+					<h1>某公司ALM集成项目</h1>
+
+		            <h2 class="entry-title">项目的需求和背景</h2>
+		            <p>由于<b>历史原因</b>，某公司研发过程中，不同的团队/部门采用自己认同的支撑工具，
+		这些工具在初期对于整合/管理资源/统一协作起到不可磨灭的作用，同时也成
+		就了现在几个重要的工具负责/管理研发过程领域的局面，给管理人员带来了困
+		扰：
+		            </p>
+		            <ol>
+		              <li>项目全局信息无法可视化</li>
+		              <li>数据隔离在不同的工具中</li>
+		              <li>很难形成贯穿周期的工作过程</li>
+		              <li>维护和管理成本高</li>
+		              <li>工具已经深入人心，成为<b>客户的使用习惯</b>，很难替换</li>
+		            </ol>
+		            <h2 class="entry-title">实施完的效果</h2>
+		            <p>某公司集成项目是为某公司做的一个拉通各个不同领域的 ALM 管理工具的解决方案，
+		保证各节点高效访问、不同级别数据可以上下追溯、采集数据，并在此基础上
+		构建自己的数据仓库以及报表定制，主要的效果可以概括为以下几点：
+		            </p>
+		            <ul>
+		              <li>完整的项目生命周期展示和管理</li>
+		              <li>数据集中，快捷的数据共享</li>
+		              <li>工具流程自动化，成本低，效率高</li>
+		              <li>统一的接口规范，方便维护与管理</li>
+		              <li>集成的方式并未取代过去的工具，最大程度的<b>保持了用户的操作习惯</b></li>
+		            </ul>
+
+		            <h2 class="entry-title">实现方案</h2>
+		            <img src="../counciltoolkit/images/article_images/alm.png"/>
+
+		            <p>本次系统的设计旨在拉通/整合各个 ALM 领域的工具，而工具、数据的整合方式有很多
+		种，例如可以简单地暴露工具的接口，让其他工具调用，或者把工具的数据导出，作为另一
+		个工具的导入，但是这些方式都不能完全保证数据的完整性和一致性，并且当特定软件升级
+		时，之前的整合代码就可能失效，需要投入大量的精力进行维护，又或者客户想替换掉某一
+		款工具，整合工作很可能是重新做一遍，系统的不稳定因素也随之扩大。
+		            </p>
+		            <p>如图的项目方案，我们的做法是在每一个工具上面开发适配器，用于和 CoreServer 对接，
+		由 CoreServer 统一管控 ALM 资源，其中一个资源需要某一个领域的资源时，先通过访问
+		CoreServer，然后路由到具体的工具的适配器上请求资源，在打通各个工具后，之上还做了
+		全文检索、全景图、数据仓库，最上面的就是项目管理员需要看到的应用了。
+		            </p>
+		            <p>项目分三期进行：
+		            <ul>
+		              <li>第一期是<b> POC </b>，简单验证方案可行性</li>
+		              <li>第二期是继续完善第一期的功能，并开发上层管理员需要的应用</li>
+		              <li>第三期是优化系统性能，并考虑系统备份，升级，容灾问题</li>
+		            </ul>
+		            </p>
+		        </article><!-- content -->
+
+				<aside id="secondary-nav" class="sidebar col-sm-3 col-md-3 col-md-offset-1">
+
+					<h2>企业IT基础设施服务</h2>
+
+					<div class="list-group">
+						<a href="#" class="list-group-item active">某公司ALM集成项目</a>
+			        </div>
+
+				</aside>
+
+			</div>
+
+		</div>
+
+
+
+		<footer role="contentinfo">
+
+			<div class="container">
+
+				<div class="row">
+
+					<ul class="nav nav-pills col-md-7 clearfix">
+
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Council</a></li>
+						<li><a href="#">Sitemap</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">News</a></li>
+
+					</ul>
+
+					<ul class="social nav nav-pills col-md-5 clearfix">
+
+						<li><a href="#"><span class="fa fa-facebook-square fa-lg"></span><span class="sr-only"> Facebook (external link)</span></a></li>
+						<li><a href="#"><span class="fa fa-twitter fa-lg"></span><span class="sr-only"> Twitter (external link)</span></a></li>
+						<li><a href="#"><span class="fa fa-youtube fa-lg"></span><span class="sr-only"> YouTube (external link)</span></a></li>
+						<li><a href="#"><span class="fa fa-linkedin-square fa-lg"></span><span class="sr-only"> LinkedIn (external link)</span></a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="row">
+
+					<ul class="small nav nav-pills col-sm-12">
+
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Languages</a></li>
+						<li><a href="#">Cookies</a></li>
+						<li><a href="#">Terms and disclaimer</a></li>
+						<li><a href="#">Privacy</a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+		<div class="sizer"></div>
+
+
+
+
+		<script src="/home/oswaldl/tools/jquery/jquery-1.11.2.js"></script>
+
+		<script src="/home/oswaldl/tools/jquery/jquery.fitvids.js"></script>
+
+		<script src="/home/oswaldl/tools/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+
+		<script src="counciltoolkit/js/core.js"></script>
+
+		<script src="counciltoolkit/js/artcle_monitor.js"></script>
+
+		<!-- BEGIN CONTENT TYPE TEMPLATES ONLY -->
+
+		<script>
+			$('#feedback').before('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
+			$('.js-feedback-toggle').click(function () {
+				$('.js-feedback').toggleClass('show');
+	  		});
+		</script>
+
+		<!-- END CONTENT TYPE TEMPLATES ONLY -->
+
+		<!-- BEGIN CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
+
+		<script>
+			$(window).on('load', function() {
+				$('table').each(function() {
+					var element = $(this);
+					var scrollWrapper = $('<div />', {
+						'class': 'scrollable',
+						'html': '<div />'
+					}).insertBefore(element);
+					element.data('scrollWrapper', scrollWrapper);
+					element.appendTo(scrollWrapper.find('div'));
+					if (element.outerWidth() > element.parent().outerWidth()) {
+						element.data('scrollWrapper').addClass('has-scroll');
+					}
+					$(window).on('resize orientationchange', function() {
+						if (element.outerWidth() > element.parent().outerWidth()) {
+							element.data('scrollWrapper').addClass('has-scroll');
+						} else {
+							element.data('scrollWrapper').removeClass('has-scroll');
+						}
+					});
+				});
+			});
+		</script>
+
+		<!-- END CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
+
+		<!-- BEGIN CONTENT TYPE TEMPLATES WITH VIDEOS ONLY -->
+
+
+		<script>
+			$(document).ready(function(){
+				$(".article").fitVids();
+			});
+		</script>
+
+		<!-- END CONTENT TYPE TEMPLATES WITH VIDEOS ONLY -->
+
+	</body>
+
+</html>

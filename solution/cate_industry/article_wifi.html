@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<!--[if lte IE 7 ]><html lang="en" class="old"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<title>汇川IPMP集成产品管理平台</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="apple-mobile-web-app-title" content="云数据中心监控解决方案">
+		<meta name="description" content="[DESCRIPTION]" />
+		<meta property="og:title" content="云数据中心监控解决方案" />
+		<meta property="og:description" content="[DESCRIPTION]" />
+
+		<script>
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	            var msViewportStyle = document.createElement("style");
+	            msViewportStyle.appendChild(
+	            	document.createTextNode(
+	            		"@-ms-viewport{width:auto!important}"
+	            	)
+	            );
+	            document.getElementsByTagName("head")[0].
+	            appendChild(msViewportStyle);
+	        }
+		</script>
+
+		<link href="../counciltoolkit/css/bootstrap.min.css" rel="stylesheet">
+
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+		<!--[if ! lte IE 8]><!-->
+			<link rel="stylesheet" media="not print" href="../counciltoolkit/css/style.css" />
+		<!--<![endif]-->
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" media="screen" href="counciltoolkit/css/legacy.css" />
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="shortcut icon" href="counciltoolkit/images/icons/favicon.ico" />
+		<link rel="apple-touch-icon" href="counciltoolkit/images/icons/apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="counciltoolkit/images/icons/apple-touch-icon.png" />
+
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse" role="navigation">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="navbar-header col-xs-5 col-sm-3">
+
+						<img src="../counciltoolkit/images/logo.png"/>
+
+					</div>
+
+					<div class="login-register col-xs-7 col-sm-4">
+
+						<ul>
+
+							<li><a href="#" class="btn btn-default">Register</a></li>
+
+							<li><a href="#" class="login btn btn-link">Log in</a></li>
+
+						</ul>
+
+					</div>
+<!--
+					<form class="main-search col-xs-12 col-sm-5" role="form">
+
+						<label class="sr-only" for="mainsearch">Search</label>
+						<input type="search" class="form-control" id="mainsearch" placeholder="eg. council tax, benefits&hellip;">
+
+						<button type="submit" class="btn btn-primary">Search</button>
+
+					</form>
+-->
+				</div>
+
+			</div>
+
+		</div>
+
+		<section class="breadcrumb">
+
+			<div class="container">
+
+				<ol>
+				  	<li><a href="../../index.html">Home</a></li>
+				  	<li><a href="../industryCategory.html">industry</a></li>
+				  	<li class="active">ipmp</li>
+				</ol>
+
+			</div>
+
+		</section>
+
+		<div class="container">
+
+			<div class="row">
+
+				<article id="content" class="article col-sm-9 col-md-8">
+
+					<h1>深圳会展中心WIFI自动取号系统</h1>
+
+		            <h2 class="entry-title"><a href="#!">项目的需求和背景</a></h2>
+		            <p>随着无线网络的发展，原中国电信在会展中心建设的无线WIFI网络已经超过8年，设备已无法正常使用，
+		              在使用过程中无法满足展会的需求，长期处于闲置状态，为做好会展中心与中国电信长期友好合作事宜，
+		              希望对会展中心的无线WIFI网络进行改造及完善覆盖区域，满足展商，参观人员及媒体等对无线WIFI网络的需求，
+		              提高无线WIFI的网络利用率，提升中国电信及会展中心的服务质量，树立优质高效的服务形象。
+		            </p>
+		            <h2 class="entry-title"><a href="#!">实施完的效果</a></h2>
+		            <p>手机自助上网：在WiFi终端选择名为SZCEC（free）的SSID，
+		              打开浏览器在登录页面用户名一栏输入手机号码（用户名为手机号码），点击短信获取密码，
+		              密码将以短信方式发送到指定手机。
+		            </p>
+		            <p>POS终端自助上网：用户使用二代身份证、带一、二维条码的参展商证或工作证到WiFi自组取号机获取帐号。
+		            </p>
+		            <h2 class="entry-title"><a href="#!">实现方案和实施效果</a></h2>
+		            <img src="../counciltoolkit/images/article_images/wifi.png"/>
+
+		            <p>
+		              用户输入账号密码后，点认证，IE把HTTP POST请求发给PORTAL SERVER，PORTAL SERVER收到帐号密码后进行预认证，
+		              此时会查询一次数据库，根据查询结果判断帐号是否已经绑定，如果未绑定则进入绑定流程，
+		              如果已绑定则向BAS发起认证，此认证过程为PORTAL协议，BAS收到UDP报文后，
+		              把相关信息如帐号、密码、用户IP、NAS IP等通过RADIUS协议发送给RADIUS服务器，
+		              RADIUS SERVER收到认证请求后对帐号进行认证，此时会查询一次用户表数据，
+		              如果认证成功则还需要查询一次在线表，判断用户是否已经在线，未在线则写入一次在线表记录，并返回认证结果；
+		              如果帐号是不可用的，则不会查询在线表，直接返回认证失败结果给BAS；
+		              BAS收到认证结果后返回认证结果给PORTAL SERVER，PORTAL SERVER收到认证结果后，
+		              根据认证结果返回不同的提示信息给用户，并且转到认证成功界面，完成整个认证过程。
+		            </p>
+		            <p>
+		            已安装10台自助刷卡服务终端，通过该终端完成用户身份认证与存储，自动打印接入WIFI的密码，极大提高了展会接入互联网的便利性。
+		            </p>
+		            <img src="../counciltoolkit/images/article_images/wifi2.png"/>
+		        </article><!-- content -->
+
+				<aside id="secondary-nav" class="sidebar col-sm-3 col-md-3 col-md-offset-1">
+
+					<h2>企业IT基础设施服务</h2>
+
+					<div class="list-group">
+						<a href="article_jsy.html" class="list-group-item">金赛银基金管理项目</a>
+						<a href="article_zds.html" class="list-group-item">周大生珠宝与管理运营APP项目</a>
+						<a href="article_wifi.html" class="list-group-item active">深圳会展中心WIFI自动取号系统</a>
+						<a href="article_ipmp.html" class="list-group-item">汇川IPMP集成产品管理平台</a>
+			        </div>
+
+				</aside>
+
+			</div>
+
+		</div>
+
+
+
+		<footer role="contentinfo">
+
+			<div class="container">
+
+				<div class="row">
+
+					<ul class="nav nav-pills col-md-7 clearfix">
+
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Council</a></li>
+						<li><a href="#">Sitemap</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">News</a></li>
+
+					</ul>
+
+					<ul class="social nav nav-pills col-md-5 clearfix">
+
+						<li><a href="#"><span class="fa fa-facebook-square fa-lg"></span><span class="sr-only"> Facebook (external link)</span></a></li>
+						<li><a href="#"><span class="fa fa-twitter fa-lg"></span><span class="sr-only"> Twitter (external link)</span></a></li>
+						<li><a href="#"><span class="fa fa-youtube fa-lg"></span><span class="sr-only"> YouTube (external link)</span></a></li>
+						<li><a href="#"><span class="fa fa-linkedin-square fa-lg"></span><span class="sr-only"> LinkedIn (external link)</span></a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="row">
+
+					<ul class="small nav nav-pills col-sm-12">
+
+						<li><a href="#">Accessibility</a></li>
+						<li><a href="#">Languages</a></li>
+						<li><a href="#">Cookies</a></li>
+						<li><a href="#">Terms and disclaimer</a></li>
+						<li><a href="#">Privacy</a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+		<div class="sizer"></div>
+
+
+
+
+		<script src="/home/oswaldl/tools/jquery/jquery-1.11.2.js"></script>
+
+		<script src="/home/oswaldl/tools/jquery/jquery.fitvids.js"></script>
+
+		<script src="/home/oswaldl/tools/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+
+		<script src="counciltoolkit/js/core.js"></script>
+
+		<script src="counciltoolkit/js/artcle_monitor.js"></script>
+
+		<!-- BEGIN CONTENT TYPE TEMPLATES ONLY -->
+
+		<script>
+			$('#feedback').before('<p class="feedback-link"><a href="javascript:void(0)" class="js-feedback-toggle">Is there anything wrong with this page?</a></p>');
+			$('.js-feedback-toggle').click(function () {
+				$('.js-feedback').toggleClass('show');
+	  		});
+		</script>
+
+		<!-- END CONTENT TYPE TEMPLATES ONLY -->
+
+		<!-- BEGIN CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
+
+		<script>
+			$(window).on('load', function() {
+				$('table').each(function() {
+					var element = $(this);
+					var scrollWrapper = $('<div />', {
+						'class': 'scrollable',
+						'html': '<div />'
+					}).insertBefore(element);
+					element.data('scrollWrapper', scrollWrapper);
+					element.appendTo(scrollWrapper.find('div'));
+					if (element.outerWidth() > element.parent().outerWidth()) {
+						element.data('scrollWrapper').addClass('has-scroll');
+					}
+					$(window).on('resize orientationchange', function() {
+						if (element.outerWidth() > element.parent().outerWidth()) {
+							element.data('scrollWrapper').addClass('has-scroll');
+						} else {
+							element.data('scrollWrapper').removeClass('has-scroll');
+						}
+					});
+				});
+			});
+		</script>
+
+		<!-- END CONTENT TYPE TEMPLATES WITH TABLES ONLY -->
+
+		<!-- BEGIN CONTENT TYPE TEMPLATES WITH VIDEOS ONLY -->
+
+
+		<script>
+			$(document).ready(function(){
+				$(".article").fitVids();
+			});
+		</script>
+
+		<!-- END CONTENT TYPE TEMPLATES WITH VIDEOS ONLY -->
+
+	</body>
+
+</html>
